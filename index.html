@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .avatar-libras {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .avatar-libras::before,
+        .avatar-libras::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            height: 10%;
+            background-color: #fff;
+        }
+
+        .avatar-libras::before {
+            transform-origin: 100%;
+        }
+
+        .avatar-libras::after {
+            transform-origin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+    </header>
+
+    <section>
+        <img src="https://img.freepik.com/vetores-premium/icone-de-avatar-masculino-pessoa-desconhecida-ou-anonima-icone-de-perfil-de-avatar-padrao-usuario-de-midia-social-homem-de-negocios-silhueta-de-perfil-de-homem-isolada-no-fundo-branco-ilustracao-vetorial_735449-120.jpg" alt="Minha Foto">
+        <div>
+            <h2>João Luiz Marçal</h2>
+            <p>Curso: Sistemas para internet</p>
+            <p>Semestre: 2º semestre</p>
+            <p>Ano: 2023</p>
+            <p>Turno: manhã</p>
+        </div>
+
+        <div>
+            <h3>Resumo Pessoal</h3>
+            <p>Sou um estudante dedicado e apaixonado por tecnologia. Atualmente, estou cursando o 2º semestre na FATEC no curso de sistemas para internet. Ao longo da minha jornada acadêmica, tenho buscado constantemente adquirir conhecimento prático e teórico para me destacar na minha área de estudo.</p>
+        </div>
+
+        <div>
+            <h3>Resumo Acadêmico</h3>
+            <p>Concluí o ensino médio integrado ao curso técnico de Desenvolvimento de Sistemas na Escola Técnica Estadual (ETEC) de Ibitinga. Durante esse período, mergulhei no mundo da programação, design de software e resolução de problemas complexos, adquirindo uma base sólida em desenvolvimento de sistemas.</p>
+        </div>
+
+       
+    </section>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget();
+      </script>
+
+</body>
+</html>
